@@ -19,3 +19,8 @@ def index():
 @app.route('/outputs')
 def supported_output():
     return ", ".join(SUPPORTED)
+
+
+@app.route('/grzes')
+def show_name():
+    return "Grzes :)"
