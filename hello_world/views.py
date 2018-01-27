@@ -21,6 +21,11 @@ def supported_output():
     return ", ".join(SUPPORTED)
 
 
+@app.route('/test')
+def show_test():
+    return "Test...."
+
+
 @app.route('/grzes')
 def show_name():
     return "Grzes :)"
